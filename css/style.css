@@ -11,78 +11,92 @@ body {
   font-family: "Poppins";
 }
 
-.container {
-  padding: 5px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1125px;
-  height: 474px;
-  margin-top: 200px;
+.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 5px;
 }
-.container .text {
+.wrapper .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  gap: 15px;
+}
+.wrapper .container .text {
   width: 100%;
   max-width: 540px;
 }
-.container .text h1 {
+.wrapper .container .text h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #ffffff;
   font-size: 50px;
   font-weight: 700;
   line-height: 55px;
   height: 131px;
 }
-.container .text p {
+.wrapper .container .text p {
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
 }
-.container .box {
+.wrapper .container .box {
   max-width: 540px;
   height: 650px;
 }
-.container .box .p {
-  width: 100%;
-  max-width: 540px;
+.wrapper .container .box .p {
   color: #ffffff;
   font-weight: 400;
   width: 100%;
   max-width: 540px;
-  height: 70px;
-  background: #0fb8d6;
+  height: 68px;
+  background: #5e54a4;
   border-radius: 12px;
-  padding: 17px 0;
+  padding: 19px 0;
   -webkit-box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1450980392);
           box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1450980392);
   text-align: center;
 }
-.container .box .p span {
+.wrapper .container .box .p span {
   color: #ffffff;
   font-weight: 700;
 }
-.container .box form {
+.wrapper .container .box form {
   margin-top: 24px;
   width: 100%;
   max-width: 540px;
-  background: floralwhite;
+  background: #fff;
   text-align: center;
   padding: 40px;
   -webkit-box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1450980392);
           box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1450980392);
   border-radius: 12px;
 }
-.container .box form .inpt {
+.wrapper .container .box form .inpt {
   margin: 0;
 }
-.container .box form input {
+.wrapper .container .box form input {
   margin-top: 20px;
   padding: 15px 32px;
   border-radius: 5px;
@@ -96,10 +110,10 @@ body {
   color: #3d3b48;
   outline: none;
 }
-.container .box form input:focus {
+.wrapper .container .box form input:focus {
   border: 2px solid #5e54a4;
 }
-.container .box form button {
+.wrapper .container .box form button {
   -webkit-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.09);
           box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.09);
   background: #38cc8b;
@@ -113,7 +127,7 @@ body {
   background: #38cc8b;
   font-size: 20px;
 }
-.container .box form button .btn {
+.wrapper .container .box form button .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,15 +139,15 @@ body {
   color: #ffffff;
   font-style: normal;
 }
-.container .box form button img {
+.wrapper .container .box form button img {
   display: inline;
 }
-.container .box form button:hover {
+.wrapper .container .box form button:hover {
   background: #77e2b3;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.container .box form label {
+.wrapper .container .box form span {
   display: none;
   margin-top: 6px;
   font-style: italic;
@@ -143,71 +157,91 @@ body {
   color: #ff7979;
   position: relative;
 }
-.container .box form label img {
+.wrapper .container .box form span img {
   position: absolute;
   right: 16px;
   top: -45px;
 }
-.container .box form input:focus + label {
+.wrapper .container .box form input:focus + span {
   display: block;
 }
-.container .box form .footer {
-  margin-top: 5px;
+.wrapper .container .box form .footer {
+  margin-top: 10px;
   height: 26px;
   font-style: normal;
   color: #bab7d4;
   font-size: 11px;
 }
-.container .box form .footer .spn {
+.wrapper .container .box form .footer .spn {
+  font-weight: 700;
   color: #ff7979;
 }
 
 @media screen and (max-width: 750px) {
-  .container {
-    margin-top: 30px;
-    width: 327px;
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 554px;
-    padding: 0 24px;
+    padding: 88px 24px 68px 24px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .text {
+  .wrapper .container .text {
+    margin: 0;
+    padding: 0;
     width: 327px;
   }
-  .container .text h1 {
+  .wrapper .container .text h1 {
     font-size: 28px;
     line-height: 36px;
     text-align: center;
     height: 80px;
   }
-  .container .text p {
+  .wrapper .container .text p {
     width: 327px;
     text-align: center;
   }
-  .container .box {
+  .wrapper .container .box {
     width: 327px;
     height: 620px;
   }
-  .container .box .title {
-    margin-top: 44px;
-  }
-  .container .box .title .p {
+  .wrapper .container .box .title .p {
     width: 327px;
     height: 88px;
     text-align: center;
     padding: 18px 66px;
-    margin-top: 44px;
+    margin-top: 60px;
   }
-  .container .box .title form {
+  .wrapper .container .box .title form {
     height: 442px;
     padding: 24px;
   }
-  .container .box .title form .inpt {
+  .wrapper .container .box .title form .inpt {
     margin: 0;
   }
-  .container .box .title form input {
+  .wrapper .container .box .title form input {
     margin-top: 16px;
     padding: 15px 32px;
     border-radius: 5px;
@@ -219,18 +253,18 @@ body {
     color: #3d3b48;
     outline: none;
   }
-  .container .box .title form input:focus {
+  .wrapper .container .box .title form input:focus {
     border: 2px solid #5e54a4;
   }
-  .container .box .title form button {
+  .wrapper .container .box .title form button {
     width: 279px;
     margin-top: 16px;
   }
-  .container .box .title form button .btn {
+  .wrapper .container .box .title form button .btn {
     display: inline;
     padding: 0 44px;
   }
-  .container .box .title form .footer {
+  .wrapper .container .box .title form .footer {
     display: inline;
   }
 }
